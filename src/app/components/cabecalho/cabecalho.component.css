@@ -14,24 +14,26 @@
   }
 
   .caricatura {
-    margin: 10px 10px 10px 0;
-    background-color: white;
+    background-color: #8b8b8b;
     width: 100%;
     max-width: 70vw; /* Ajuste o valor conforme necessário */
   }
 
+
   header {
-    background-color: white;
-    padding: 15px;
-    color: white;
+    background-color: #8b8b8b;
+    color: #8b8b8b;
+    padding-top: 10px;
+
     display: flex;
     justify-content: flex-end;
+    width: 100%;
   }
   
   header a {
-    color: black;
+    color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin-right: 25px;
     font-size: 20px;
   }
 
