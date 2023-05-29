@@ -1,0 +1,86 @@
+.card {
+    width: 80%;
+    max-width: 500px; /* Define uma largura máxima para o card */
+    margin: 0 auto; /* Centraliza o card horizontalmente */
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-page {
+    text-align: center;
+  }
+  
+  .contact-form {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .contact-form .form-group {
+    display: grid;
+    gap: 5px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: rgb(248, 54, 54);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  
+  .contact-item i {
+    color: rgb(248, 54, 54);
+  }
+  
+  .map {
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-item {
+    margin-right: 20px;
+  }
+
+  .icon{
+    font-size: 50px;
+    margin: 10px 30px ;
+  }
+
+  span{
+    display: none;
+  }

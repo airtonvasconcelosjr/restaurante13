@@ -1,0 +1,235 @@
+.custom-container {
+    display: flex;
+    background-color: white;
+}
+
+.column {
+    width: 33%;
+    padding: 10px;
+}
+
+.description {
+    color: green;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mattress {
+    width: 60%;
+    height: auto;
+    animation-name: slideInFromRight; /* Nome da animação */
+    animation-duration: 2s; /* Duração da animação */
+    animation-delay: 0.1s; /* Atraso antes de iniciar a animação */
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%); /* Iniciar fora da tela à direita */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.sinatura{
+    margin-top: -8%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.sign{
+    width: 12%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: flex-start;
+}
+
+.signt{
+    margin-left: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(88, 88, 88);
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.parag {
+    text-align: justify;
+    animation-fill-mode: forwards;
+}
+
+
+.title {
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 2%;
+    animation-name: fadeIn; /* Nome da animação */
+    animation-duration: 1.5s; /* Duração da animação */
+    animation-delay: 1s; /* Atraso antes de iniciar a animação */
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+h2 {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-top: -25px;
+}
+
+@media (max-width: 1300px){
+    .sinatura{
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .signt{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .number {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+        margin-left: 40px;
+    }
+
+}
+
+
+/*phone query*/
+@media (max-width: 428px) {
+    .custom-container {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+
+    h2{
+        font-size: 1.1rem;
+        margin-left: 50px;
+    }
+    .number{
+        margin-left: 10px;
+    }
+
+    .mattress {
+        width: 65%;
+        margin-top: 25px;
+    }
+    .column {
+        width: 100%;
+        animation: slide-in-right 1s ease-in-out forwards;
+        padding: 0px;
+    }
+
+    .title-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title {
+        margin-top: 15px;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .column {
+        animation: slide-in-right 1s ease-in-out forwards;
+        padding: 0px;
+    }
+    .parag{
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        animation: slide-in-right 1.5s ease-in-out;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        animation-fill-mode: forwards;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@media (min-width: 750px) {
+    .parag {
+        animation: slide-in-up 2s ease-in-out;
+    }
+}
+
+@keyframes slide-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+        animation-fill-mode: forwards;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        animation-fill-mode: forwards;
+    }
+}
+
