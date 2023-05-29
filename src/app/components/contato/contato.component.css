@@ -84,3 +84,20 @@
   span{
     display: none;
   }
+
+  .rest_map{
+    width: 100%;
+    height: auto;
+  }
+
+  .map {
+    width: 90%;
+    height: auto;
+    text-align: center; /* Alinha a imagem no centro da div */
+    border: 1px solid black;
+  }
+
+  .map img {
+    max-width: 100%;
+    height: auto;
+  }
