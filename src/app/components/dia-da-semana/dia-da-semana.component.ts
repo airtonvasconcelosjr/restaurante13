@@ -21,5 +21,15 @@ export class DiaDaSemanaComponent implements OnInit {
       "./assets/imagens/sabado.png",
     ];
     this.imagemUrl = imagens[diaSemana];
+    const mensagens = [
+      "Domingo",
+      "Segunda-Feira",
+      "Terça-Feira",
+      "Quarta-Feira",
+      "Quinta-Feira",
+      "Sexta-Feira",
+      "abado.png",
+    ]
+    this.mensagem = mensagens[diaSemana]
   }
 }

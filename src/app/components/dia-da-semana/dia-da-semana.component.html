@@ -1,12 +1,31 @@
 <div class="container">
-    <div class="title">
-        Conheça o melhor cardápio da região 
+    <div class="banner-container">
+      <img class="banner" src="./assets/imagens/caricomfundo.png" alt="">
+    </div>
+    <div class="day">
+      Opções de {{ mensagem }}
     </div>
     <div class="img-container">
-        <img [src]="imagemUrl" [alt]="mensagem" *ngIf="imagemUrl">
+      <img [src]="imagemUrl" [alt]="mensagem" *ngIf="imagemUrl">
+      <div class="banner-title">
+        Conheça o melhor cardápio da região 
+      </div>
     </div>
-</div>
-<div class="cardapio-link">
-    <button routerLink="/Cardapio"> Conheça o cardapio completo</button>
-</div>
-
+    <div *ngIf="mensagem === 'Segunda-Feira'" class="additional-images">
+      <div class="card">
+        <div class="row">
+          <img src="./assets/imagens/bife.png" alt="">
+          <img src="./assets/imagens/picanha.png" alt="">
+        </div>
+        <div class="row">
+          <img src="./assets/imagens/frango.png" alt="">
+          <img src="./assets/imagens/parme.png" alt="">
+          <img src="./assets/imagens/tilapia.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cardapio-link">
+    <button routerLink="/Cardapio">Conheça o cardápio completo</button>
+  </div>
+  
