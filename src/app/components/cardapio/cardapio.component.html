@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row" >
+    <div class="card" (click)="abrirImagemMaior('./assets/imagens/sexta.png')">
+      <img src="./assets/imagens/sexta.png" alt="Imagem 1">
+      <h3>Segunda</h3>
+    </div>
+    <div class="card" (click)="abrirImagemMaior('./assets/imagens/sexta.png')">
+      <img src="./assets/imagens/sexta.png" alt="Imagem 2">
+      <h3>Terça</h3>
+    </div>
+    <div class="card" (click)="abrirImagemMaior('./assets/imagens/sexta.png')">
+      <img src="./assets/imagens/sexta.png" alt="Imagem 3">
+      <h3>Quarta</h3>
+    </div>
+  </div>
+  <div class="container">
+  <div class="row">
+    <div class="card" (click)="abrirImagemMaior('./assets/imagens/sexta.png')">
+      <img src="./assets/imagens/sexta.png" alt="Imagem 4">
+      <h3>Quinta</h3>
+    </div>
+    <div class="card" (click)="abrirImagemMaior('./assets/imagens/sexta.png')">
+      <img src="./assets/imagens/sexta.png" alt="Imagem 5">
+      <h3>Sexta</h3>
+    </div>
+    <div class="card" (click)="abrirImagemMaior('./assets/imagens/sabado.png')">
+      <img src="./assets/imagens/sabado.png" alt="Imagem 6">
+      <h3>Sábado</h3>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Exibir imagem em tamanho maior -->
+<div *ngIf="imagemSelecionada">
+  <button class="fechar" (click)="fecharImagem()">Fechar</button>
+  <img class="imagem-maior" [src]="imagemSelecionada" alt="Imagem Selecionada" (click)="fecharImagem()">
+</div>
