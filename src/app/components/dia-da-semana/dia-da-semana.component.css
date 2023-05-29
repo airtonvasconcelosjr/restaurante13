@@ -1,62 +1,65 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .img-container {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-  }
-  
-  .banner-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .banner {
-    width: 100%;
-  }
-  
-  .banner-title {
-    margin-left: 20px; 
-  }
-  
-  .cardapio-link {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  button:hover {
-    font-weight: bold;
-  }
-  
-  .additional-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card {
-    width: 40%;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .card img {
-    margin: 0.5rem;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner-title {
+  margin-left: 20px; 
+}
+
+.cardapio-link {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: 800px;
+}
+
+.card {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  border-radius: 15px;
+  box-shadow: rgba(255, 255, 255, 0.8);
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Ajuste a altura desejada aqui */
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: rgba(255, 255, 255, 0.8);
+}
