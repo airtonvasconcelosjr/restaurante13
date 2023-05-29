@@ -22,17 +22,17 @@
 
   header {
     background-color: white;
-    padding: 20px;
-    color: black;
+    padding: 15px;
+    color: white;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: -2rem;
   }
   
   header a {
     color: black;
     text-decoration: none;
     margin-left: 20px;
+    font-size: 20px;
   }
 
   a:hover{

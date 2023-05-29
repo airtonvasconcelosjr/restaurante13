@@ -1,7 +1,15 @@
 main {
-    background: url(/assets/imagens/background-completo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 100vh;
+  background: linear-gradient(to bottom, #8b8b8b, #ffffff);
+  min-height: 100vh;
+}
+
+  .img-container {
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .caricatura {
+    margin: 10px 10px 10px 0;
+    width: 100%;
+    max-width: 70vw; /* Ajuste o valor conforme necessário */
   }

@@ -6,19 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dia-da-semana.component.css']
 })
 export class DiaDaSemanaComponent implements OnInit {
-  imagemUrl: string | undefined;
+  imagemUrl: string = '';
   mensagem: string | undefined;
 
   ngOnInit() {
     const diaSemana = new Date().getDay(); // Obtém o dia da semana atual (0 - Domingo, 1 - Segunda, 2 - Terça, ...)
     const imagens = [
-      "url_da_imagem_do_domingo",
-      "url_da_imagem_da_segunda",
-      "url_da_imagem_da_terca",
-      "url_da_imagem_da_quarta",
-      "url_da_imagem_da_quinta",
+      "./assets/imagens/domingo.png",
+      "./assets/imagens/segunda.png",
+      "./assets/imagens/terca.png",
+      "./assets/imagens/quarta.png",
+      "./assets/imagens/quinta.png",
       "./assets/imagens/sexta.png",
-      "./assets/imagens/sabado.png"
+      "./assets/imagens/sabado.png",
     ];
     this.imagemUrl = imagens[diaSemana];
   }
