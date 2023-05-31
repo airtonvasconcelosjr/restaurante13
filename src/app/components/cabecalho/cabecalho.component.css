@@ -48,10 +48,12 @@
       font-size: 12px;
       margin-right: 5px;
     }
-
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 510px) {
+    .caricatura{
+      display: none;
+    }
   }
 
   @media (min-width: 1000px) {
