@@ -25,6 +25,7 @@
   header {
       text-align: right;
       margin-top: 10px;
+      white-space: nowrap; /* Impede que o conteúdo do header seja quebrado em várias linhas */
   }
   
   header a{
@@ -52,7 +53,7 @@
   
   @media (max-width: 510px) {
     .caricatura{
-      display: none;
+      width: 60%;
     }
   }
 
