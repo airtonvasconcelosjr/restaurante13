@@ -40,7 +40,7 @@
 }
 
 .imagem-maior {
-  position: fixed; /* Define a posição fixa */
+  position: absolute; /* Define a posição fixa */
   top: 50%; /* Define a posição vertical */
   left: 50%; /* Define a posição horizontal */
   transform: translate(-50%, -50%); /* Centraliza a imagem */
@@ -49,5 +49,15 @@
   border: 2px solid black;
   width: 20%;
   height: auto;
+}
+
+@media (max-width: 510px) {
+  h3{
+    font-size: 1rem;
+  }
+  .imagem-maior{
+    width: 85%;
+  }
+
 }
   
