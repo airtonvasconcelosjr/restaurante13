@@ -1,5 +1,9 @@
 .card {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     max-width: 500px; /* Define uma largura máxima para o card */
     margin: 0 auto; /* Centraliza o card horizontalmente */
     padding: 20px;
@@ -12,41 +16,6 @@
     text-align: center;
   }
   
-  .contact-form {
-    margin-bottom: 20px;
-  }
-  
-  .contact-form form {
-    display: grid;
-    gap: 10px;
-  }
-  
-  .contact-form .form-group {
-    display: grid;
-    gap: 5px;
-  }
-  
-  .contact-form label {
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .contact-form button[type="submit"] {
-    background-color: rgb(248, 54, 54);
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
   .contact-info {
     margin-top: 20px;
   }
@@ -54,7 +23,6 @@
   .contact-info h2 {
     margin-bottom: 10px;
   }
-  
   
   .contact-item i {
     color: rgb(248, 54, 54);
@@ -64,25 +32,28 @@
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
-  
-  .contact-details {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto; /* Adicionado para alinhar ao centro */
   }
   
   .contact-item {
-    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-item i {
+    color: rgb(248, 54, 54);
+    display: block; /* Alteração para exibir os ícones em linhas separadas */
   }
 
   .icon{
     font-size: 50px;
-    margin: 10px 30px ;
   }
 
-  span{
-    display: none;
+  .info-text{
+    font-size: 15px;
   }
 
   .rest_map{
