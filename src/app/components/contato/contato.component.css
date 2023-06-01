@@ -1,6 +1,5 @@
 .card {
     width: 80%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,8 +73,11 @@
     height: auto;
   }
 
-  @media (max-width: 510px) {
+  @media (max-width: 499px) {
     h1{
       font-size: 1.8rem;
+    }
+    .card{
+    height: 100vh;
     }
   }
