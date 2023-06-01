@@ -30,7 +30,7 @@ body{
 }
 
 .img-menu{
-  width: 35%;
+  width: 85%;
   border-radius: 15px;
 }
 
@@ -45,7 +45,7 @@ button {
   cursor: pointer;
   color: #ffffff;
   text-align: center;
-  background-color: #DF5141;
+  background-color: #302e92;
   padding: 8px 35px;
   border-radius: 10px;
 }
@@ -73,6 +73,7 @@ button:hover {
 .card:hover {
   transform: scale(1.5);
   z-index: 2;
+  border: 1px solid #302e92;;
 }
 
 .card img {
@@ -84,12 +85,12 @@ button:hover {
 }
 
 .day{
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 15px 0px;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffff;
   text-align: center;
-  background-color: #DF5141;
+  background-color: #302e92;
   padding: 8px 35px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

@@ -25,7 +25,7 @@
   }
   
   .contact-item i {
-    color: rgb(248, 54, 54);
+    color: #302e92;;
   }
   
   .map {
@@ -44,7 +44,7 @@
   }
   
   .contact-item i {
-    color: rgb(248, 54, 54);
+    color: #302e92;
     display: block; /* Alteração para exibir os ícones em linhas separadas */
   }
 
