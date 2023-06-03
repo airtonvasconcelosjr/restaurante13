@@ -20,13 +20,13 @@
 			<section id="one" class="main style1">
 				<div class="container">
 					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
+						<div class="col-6 col-12-medium mt-4">
 							<header class="major">
-								<h2>Cardápio de {{ mensagem }}</h2>
+								<h2>Cardápio de {{ mensagem }}</h2> <hr>
 							</header>
-							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vn.</p>
+							<p class="imagem-dia">Comida caseira, onde sabores autênticos e tradição se encontram. Delicie-se com pratos feitos com amor e ingredientes frescos. Os aguardamos com comida boa e cerveja gelada! Sinta-se em casa conosco!</p>
 						</div>
-						<div class="col-6 col-12-medium imp-medium">
+						<div class="col-6 col-12-medium imagem-dia imp-medium">
 							<span class=""><img  class="img-menu" [src]="imagemUrl" [alt]="mensagem" *ngIf="imagemUrl"></span>
 						</div>
 					</div>
@@ -38,33 +38,41 @@
 					<div class="one">
 						<div class="imgs">
 							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
+								<h2>Restaurante dos 13</h2> <hr class="linha1">
 							</header>
-							<p>Adipisc</p>
+							<p>Bem-vindo ao nosso restaurante, onde a qualidade dos ingredientes é primordial. Utilizamos ingredientes frescos e selecionados, garantindo sabores autênticos em cada prato que servimos. Acreditamos que a escolha cuidadosa dos ingredientes é essencial para proporcionar uma experiência gastronômica excepcional.
+
+								Além disso, oferecemos uma seleção de cervejas geladas para acompanhar as suas refeições. Nada melhor do que desfrutar de uma cerveja refrescante para complementar os sabores dos nossos pratos e tornar a sua experiência ainda mais prazerosa.
+								
+								E o nosso atendimento não fica para trás. Nossa equipe está sempre pronta para recebê-lo com um sorriso caloroso e oferecer um serviço atencioso. Queremos que você se sinta bem acolhido e tenha uma experiência memorável em nosso restaurante.
+								
+								Venha nos visitar e descubra a combinação perfeita de ingredientes de qualidade, cervejas geladas e um atendimento impecável. Estamos ansiosos para recebê-lo e proporcionar uma experiência gastronômica única!</p>
 							<div class="card-container">
-						<div class="card">
-							<img src="./assets/imagens/bife.png" alt="">
-						  </div>
-						  <div class="card">
-							<img src="./assets/imagens/frango.png" alt="">
-						  </div>
-						  <div class="card">
-							<img src="./assets/imagens/tilapia.png" alt="">
-						  </div>
-						  <div class="card">
-							<img src="./assets/imagens/parme.png" alt="">
-						  </div>
-						  <div class="card">
-							<img src="./assets/imagens/feijoada.png" alt="">
-						  </div>
-						  <div class="card">
-							<img src="./assets/imagens/rabada.png" alt="">
-						  </div>
-						  <div class="card">
-							<img src="./assets/imagens/picanha.png" alt="">
-						  </div>
+								<div class="card">
+									<img src="./assets/imagens/bife.png" alt="">
+								</div>
+								<div class="card">
+									<img src="./assets/imagens/frango.png" alt="">
+								</div>
+								<div class="card">
+									<img src="./assets/imagens/tilapia.png" alt="">
+								</div>
+								<div class="card">
+									<img src="./assets/imagens/parme.png" alt="">
+								</div>
+								<div class="card">
+									<img src="./assets/imagens/feijoada.png" alt="">
+								</div>
+								<div class="card">
+									<img src="./assets/imagens/rabada.png" alt="">
+								</div>
+								<div class="card">
+									<img src="./assets/imagens/picanha.png" alt="">
+								</div>
+							</div>
 						</div>
+						<div class="cardapio-link">
+							<button routerLink="/Cardapio">Conheça o cardápio completo</button>
 						</div>
 					</div>
 				</div>
