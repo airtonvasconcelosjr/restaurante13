@@ -8,7 +8,8 @@
 }
   .caricatura {
     max-width: 70vw; 
-    width: 55%;
+    width: 10%;
+    height: auto;
   }
 
   .img-container {
@@ -51,14 +52,8 @@
     }
   }
   
-  @media (max-width: 510px) {
+  @media (max-width: 768px) {
     .caricatura{
-      width: 60%;
-    }
-  }
-
-  @media (min-width: 1000px) {
-    .caricatura {
-      width: 35%;
+      width: 20%;
     }
   }
