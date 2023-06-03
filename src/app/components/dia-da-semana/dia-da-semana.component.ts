@@ -28,7 +28,7 @@ export class DiaDaSemanaComponent implements OnInit {
       "Quarta-Feira",
       "Quinta-Feira",
       "Sexta-Feira",
-      "abado.png",
+      "Sábado",
     ]
     this.mensagem = mensagens[diaSemana]
   }
