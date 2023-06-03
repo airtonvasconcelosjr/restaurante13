@@ -410,4 +410,21 @@ pre code {
 			width: 140%;
 		}
 	}
+
+	@media (max-width: 765px) {
+		.img-menu{
+			width: 100%;
+		}
+		p{
+			font-size: 12px;
+		}
+		h2{
+			font-size: 20px;
+		}
+		.linha1{
+			margin-top: 0;
+		}	
+	}
+	
+
 	
