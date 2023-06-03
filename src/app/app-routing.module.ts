@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './components/index/index.component';
 import { CardapioComponent } from './components/cardapio/cardapio.component';
 import { ContatoComponent } from './components/contato/contato.component';
+import { NewIndexComponent } from './components/new-index/new-index.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'Contato',
     component: ContatoComponent
+  },
+  {
+    path:'NOVOINDEX',
+    component: NewIndexComponent
   },
 ];
 

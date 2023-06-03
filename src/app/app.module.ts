@@ -10,6 +10,7 @@ import { DiaDaSemanaComponent } from './components/dia-da-semana/dia-da-semana.c
 import { CardapioComponent } from './components/cardapio/cardapio.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { NewIndexComponent } from './components/new-index/new-index.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MapaComponent } from './components/mapa/mapa.component';
     CardapioComponent,
     ContatoComponent,
     MapaComponent,
+    NewIndexComponent,
   ],
   imports: [
     BrowserModule,
