@@ -127,6 +127,7 @@ p{
 @media (max-width: 510px) {
   .day{
     font-size: 1rem;
+    margin-top: 0;
   }
   .img-menu{
     width: 55%;
@@ -143,8 +144,10 @@ p{
     width: calc(10% - 5px); /* modificado para considerar a margem */
     border-radius: 8px;
   }
-  .card-container{
-    margin-left: -20px;
+  .banner{
+    width: 100vw;
   }
-  
+  p{
+    margin: 1rem 0.5rem ;
+  }
 }
