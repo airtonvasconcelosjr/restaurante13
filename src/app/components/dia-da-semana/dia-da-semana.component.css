@@ -130,7 +130,7 @@ p{
     margin-top: 0;
   }
   .img-menu{
-    width: 55%;
+    width: 65%;
   }
   .card img{
     width: 100%;
@@ -148,9 +148,12 @@ p{
     width: 100vw;
   }
   p{
-    margin: 1rem 0.5rem ;
+    margin: 1rem 3rem ;
   }
   button{
     font-size: 0.8rem;
+  }
+  hr{
+    margin-top: 0;
   }
 }
