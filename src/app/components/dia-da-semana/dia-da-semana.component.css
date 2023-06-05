@@ -120,8 +120,13 @@ h1 {
 }
 
 p{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: lighter  ;
+}
+h3{
+  text-align: center;
+  font-size: 8px;
+  color: red;
 }
 
 @media (max-width: 510px) {
@@ -149,6 +154,7 @@ p{
   }
   p{
     margin: 1rem 2.5rem ;
+    text-align: center;
   }
   button{
     font-size: 0.8rem;
@@ -160,4 +166,8 @@ p{
     font-size: 2rem;
     margin: 1rem 1.5rem 1rem 1.5rem;
   }
+  .sides{
+    margin-bottom: 0;
+  }
+  
 }
