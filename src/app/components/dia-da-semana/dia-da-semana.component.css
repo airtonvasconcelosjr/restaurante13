@@ -31,7 +31,7 @@ body{
 }
 
 .img-menu {
-  width: 85%;
+  width: 45%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   opacity: 0; /* Começa com opacidade zero */
@@ -61,6 +61,7 @@ button {
   padding: 5px 25px;
   border-radius: 10px;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
 button:hover {
@@ -74,7 +75,6 @@ button:hover {
   align-items: center;
   flex-wrap: space-between; /* adicionado para permitir que os cards quebrem linha */
   max-width: 800px;
-  background-color: #333;
   width: 100vw;
   padding: 20px; /* adicionado para espaçamento interno */
   box-sizing: border-box; /* adicionado para incluir o padding na largura e altura total */
@@ -141,8 +141,8 @@ hr{
 }
 
 h1 {
-  margin-top: 1rem;
   font-size: 30px;
+  margin-top: 1rem;
 }
 
 p{
@@ -163,6 +163,9 @@ h4{
   .day{
     font-size: 1rem;
     margin-top: 0;
+  }
+  .card-container{
+    background-color: #333;
   }
   .img-menu{
     width: 70%;
@@ -195,7 +198,7 @@ h4{
   }
   h1{
     font-size: 2rem;
-    margin: 0 1.5rem 1rem 1.5rem;
+    margin: 1rem 1.5rem 1rem 1.5rem;
   }
   .sides{
     margin-bottom: 0;
