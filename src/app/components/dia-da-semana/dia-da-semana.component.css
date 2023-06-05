@@ -30,10 +30,21 @@ body{
   margin-left: 20px; 
 }
 
-.img-menu{
+.img-menu {
   width: 85%;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* modificado para adicionar uma sombra mais suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Começa com opacidade zero */
+  animation: aparecer 3s ease forwards; /* Aplica a animação "aparecer" com duração de 1 segundo */
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0; /* Começa com opacidade zero */
+  }
+  to {
+    opacity: 1; /* Termina com opacidade total */
+  }
 }
 
 .cardapio-link {
@@ -61,12 +72,12 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: space-between; /* adicionado para permitir que os cards quebrem linha */
-  margin-top: 20px;
   max-width: 800px;
   background-color: #333;
   width: 100vw;
   padding: 20px; /* adicionado para espaçamento interno */
   box-sizing: border-box; /* adicionado para incluir o padding na largura e altura total */
+  overflow: hidden; /* Adicionado para esconder os cards durante a animação */
 }
 
 .card {
@@ -76,6 +87,10 @@ button:hover {
   margin-left: 15px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* modificado para adicionar uma sombra mais suave */
+  transform: translateY(100%); /* Inicia os cards posicionados abaixo do contêiner */
+  animation: slideUp 2s ease forwards; /* Aplica a animação "aparecer" com duração de 1 segundo */
+  opacity: 0;
+  animation-delay: 2.5s;
 }
 
 .card:hover {
@@ -93,6 +108,16 @@ button:hover {
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* modificado para adicionar uma sombra mais suave */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Inicia os cards posicionados abaixo do contêiner */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Termina os cards posicionados no lugar original */
+  }
 }
 
 .day{

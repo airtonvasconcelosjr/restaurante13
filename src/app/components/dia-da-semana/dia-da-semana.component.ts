@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dia-da-semana.component.css']
 })
 export class DiaDaSemanaComponent implements OnInit {
+  
   imagemUrl: string = '';
   mensagem: string | undefined;
 
