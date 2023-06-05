@@ -4,16 +4,15 @@
       <img class="banner" src="./assets/imagens/caricomfundo.png" alt="">
     </div>
     <div class="day">
-      <h1>Cardápio de <br> {{ mensagem }}</h1> <hr> 
-      <p>Venha curtir nossas opções de {{ mensagem }} e tomar uma cerveja gelada com a gente! </p>
+      <h1>Cardápio de <br> <b>{{ mensagem }}</b></h1> <hr> 
+      <p>Venha curtir nossas opções de <b>{{ mensagem }}</b> e tomar uma cerveja gelada com a gente! </p>
     </div>
     <div class="banner-container">
       <img  class="img-menu" [src]="imagemUrl" [alt]="mensagem" *ngIf="imagemUrl">
     </div>
     <div class="subtitle">
       <h3>checar de acordo com disponibilidade de estoque</h3>
-      <p>Todos os pratos acompanham porções de arroz, feijão, salada, vinagrete e farofa</p>
-     
+      <p class="sides">Todos os pratos acompanham porções de arroz, feijão, salada, vinagrete e farofa</p>
     </div>
     <div *ngIf ="mensagem  === 'Segunda-Feira' || 'Quarta-feira'" class="card-container">
       <div class="card">
