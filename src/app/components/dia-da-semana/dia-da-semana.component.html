@@ -4,7 +4,8 @@
       <img class="banner" src="./assets/imagens/caricomfundo.png" alt="">
     </div>
     <div class="day">
-      Cardápio de {{ mensagem }}
+      <h1>Cardápio de {{ mensagem }}</h1> <hr> 
+      <p>Venha curtir nossas opções de {{ mensagem }} e tomar uma cerveja gelada com a gente! </p>
     </div>
     <div class="banner-container">
       <img  class="img-menu" [src]="imagemUrl" [alt]="mensagem" *ngIf="imagemUrl">
@@ -23,8 +24,14 @@
         <img src="./assets/imagens/parme.png" alt="">
       </div>
       <div class="card">
-        <img src="./assets/imagens/picanha.png" alt="">
+        <img src="./assets/imagens/feijoada.png" alt="">
       </div>
+      <div class="card">
+        <img src="./assets/imagens/rabada.png" alt="">
+      </div>
+      <div class="card">
+        <img src="./assets/imagens/picanha.png" alt="">
+      </div>>
     </div>
   </div>
   <div class="cardapio-link">
