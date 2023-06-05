@@ -76,7 +76,7 @@ button:hover {
   flex-wrap: space-between; /* adicionado para permitir que os cards quebrem linha */
   max-width: 800px;
   width: 100vw;
-  padding: 20px; /* adicionado para espaçamento interno */
+  padding: 20px 20px 0 20px; /* adicionado para espaçamento interno */
   box-sizing: border-box; /* adicionado para incluir o padding na largura e altura total */
   overflow: hidden; /* Adicionado para esconder os cards durante a animação */
 }
