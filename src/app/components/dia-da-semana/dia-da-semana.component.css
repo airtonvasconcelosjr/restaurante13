@@ -21,6 +21,7 @@ body{
   justify-content: center;
 }
 
+
 .banner {
   width: 100%;
 }
@@ -32,6 +33,7 @@ body{
 .img-menu{
   width: 85%;
   border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* modificado para adicionar uma sombra mais suave */
 }
 
 .cardapio-link {
@@ -45,7 +47,7 @@ button {
   cursor: pointer;
   color: #ffffff;
   text-align: center;
-  background-color: #302e92;
+  background-color: #4686a0;
   padding: 8px 35px;
   border-radius: 10px;
 }
@@ -56,44 +58,70 @@ button:hover {
 
 .card-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: space-between; /* adicionado para permitir que os cards quebrem linha */
   margin-top: 20px;
   max-width: 800px;
+  background-color: #333;
+  width: 100vw;
+  padding: 20px; /* adicionado para espaçamento interno */
+  box-sizing: border-box; /* adicionado para incluir o padding na largura e altura total */
 }
 
 .card {
-  width: 20%;
+  width: calc(15% - 0px); /* modificado para considerar a margem */
   text-align: center;
   margin-bottom: 15px;
   margin-left: 15px;
   border-radius: 15px;
-  box-shadow: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* modificado para adicionar uma sombra mais suave */
 }
 
 .card:hover {
-  transform: scale(1.5);
+  transform: scale(1.1); /* modificado para escala menor no hover */
   z-index: 2;
-  border: 1px solid #302e92;;
+  border: 1px solid white;
 }
 
 .card img {
   width: 100%;
   height: 200px; /* Ajuste a altura desejada aqui */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* modificado para adicionar uma sombra mais suave */
 }
 
 .day{
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin: 15px 0px;
   font-weight: bold;
   color: #ffff;
   text-align: center;
-  background-color: #302e92;
-  padding: 8px 35px;
-  border-radius: 10px;
+  background-color: #4686a0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  text-align: center;
+}
+
+hr{
+  width: 30%;
+  color: white;
+  text-align: left;
+  border: 1px solid white;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 30px;
+}
+
+p{
+  font-size: 14px;
+  font-weight: lighter  ;
 }
 
 @media (max-width: 510px) {
@@ -101,13 +129,22 @@ button:hover {
     font-size: 1rem;
   }
   .img-menu{
-    width: 75%;
+    width: 55%;
   }
   .card img{
     width: 100%;
-    height: 220px;
+    height: 150px;
+    border-radius: 8px;
   }
   .cardapio-link{
     font-size: 1rem;
   }
+  .card {
+    width: calc(10% - 5px); /* modificado para considerar a margem */
+    border-radius: 8px;
+  }
+  .card-container{
+    margin-left: -20px;
+  }
+  
 }
