@@ -7,21 +7,21 @@ import { Component } from '@angular/core';
 })
 export class NewIndexComponent {
 
-  imagemUrl: string = '';
+  cardapio: string | undefined;
   mensagem: string | undefined;
 
   ngOnInit() {
     const diaSemana = new Date().getDay(); // Obtém o dia da semana atual (0 - Domingo, 1 - Segunda, 2 - Terça, ...)
-    const imagens = [
-      "./assets/imagens/domingo.png",
-      "./assets/imagens/segunda.png",
+    const opcoes = [
+      "O Restaurante não funciona aos Domingos, volte novamente amanhã",
+      "Temos como opções, filé de frango, bife acebolado, parmegiana, picanha com fritas e filé de tilápia.",
       "./assets/imagens/terca.png",
       "./assets/imagens/quarta.png",
       "./assets/imagens/quinta.png",
       "./assets/imagens/sexta.png",
       "./assets/imagens/sabado.png",
     ];
-    this.imagemUrl = imagens[diaSemana];
+    this.cardapio = opcoes[diaSemana];
     const mensagens = [
       "Domingo",
       "Segunda-Feira",

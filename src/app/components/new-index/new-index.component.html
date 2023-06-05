@@ -19,17 +19,10 @@
 		<!-- One -->
 			<section id="one" class="main style1">
 				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium mt-4">
-							<header class="major">
-								<h2>Cardápio de {{ mensagem }}</h2> <hr>
-							</header>
-							<p class="imagem-dia">Comida caseira, onde sabores autênticos e tradição se encontram. Delicie-se com pratos feitos com amor e ingredientes frescos. Os aguardamos com comida boa e cerveja gelada! Sinta-se em casa conosco!</p>
-						</div>
-						<div class="col-6 col-12-medium imagem-dia imp-medium">
-							<span class=""><img  class="img-menu" [src]="imagemUrl" [alt]="mensagem" *ngIf="imagemUrl"></span>
-						</div>
-					</div>
+					<header class="major">
+						<h2>Cardápio de {{ mensagem }}</h2> <hr>
+					</header>
+					<p class="imagem-dia">{{ cardapio }}!</p>
 				</div>
 			</section>
 		<!-- Two -->
@@ -47,7 +40,7 @@
 								E o nosso atendimento não fica para trás. Nossa equipe está sempre pronta para recebê-lo com um sorriso caloroso e oferecer um serviço atencioso. Queremos que você se sinta bem acolhido e tenha uma experiência memorável em nosso restaurante.
 								
 								Venha nos visitar e descubra a combinação perfeita de ingredientes de qualidade, cervejas geladas e um atendimento impecável. Estamos ansiosos para recebê-lo e proporcionar uma experiência gastronômica única!</p>
-							<div class="card-container">
+							<!-- <div class="card-container">
 								<div class="card">
 									<img src="./assets/imagens/bife.png" alt="">
 								</div>
@@ -69,7 +62,7 @@
 								<div class="card">
 									<img src="./assets/imagens/picanha.png" alt="">
 								</div>
-							</div>
+							</div>-->
 						</div>
 						<div class="cardapio-link">
 							<button routerLink="/Cardapio">Conheça o cardápio completo</button>

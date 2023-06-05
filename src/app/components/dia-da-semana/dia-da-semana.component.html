@@ -10,6 +10,11 @@
     <div class="banner-container">
       <img  class="img-menu" [src]="imagemUrl" [alt]="mensagem" *ngIf="imagemUrl">
     </div>
+    <div class="subtitle">
+      <h3>checar de acordo com disponibilidade de estoque</h3>
+      <p>Todos os pratos acompanham porções de arroz, feijão, salada, vinagrete e farofa</p>
+     
+    </div>
     <div *ngIf ="mensagem  === 'Segunda-Feira' || 'Quarta-feira'" class="card-container">
       <div class="card">
         <img src="./assets/imagens/bife.png" alt="">
