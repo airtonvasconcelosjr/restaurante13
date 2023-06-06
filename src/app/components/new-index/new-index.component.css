@@ -42,7 +42,17 @@ p {
 	margin: 0 0 2em 0;
 	text-align: justify;
 	line-height: 1.5rem;
+	animation: slideUp 3s ease forwards; /* Aplica a animação "aparecer" com duração de 1 segundo */
 }
+
+@keyframes fadeIn {
+	from {
+	  opacity: 0; /* Começa com opacidade zero */
+	}
+	to {
+	  opacity: 1; /* Termina com opacidade total */
+	}
+  }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #555;
@@ -63,6 +73,7 @@ h2 {
 	font-size: 2.5em;
 	line-height: 1.35em;
 	font-weight: bold;
+	animation: fadeIn 2s ease forwards; /* Aplica a animação "aparecer" com duração de 1 segundo */
 }
 
 hr {
@@ -254,6 +265,9 @@ hr {
 	.logorest{
 		width: 65%;
 		margin-top: -20px;
+		animation-delay: 5s;
+		animation: fadeIn 3s ease forwards; /* Aplica a animação "aparecer" com duração de 1 segundo */
+		
 	}
 
 	.img-menu{
@@ -299,11 +313,21 @@ hr {
 		border-top: 2px solid black;
 	}
 
-	.imagem-dia {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.opcao-dia {
+		animation: slideUp 2s ease forwards; /* Aplica a animação "aparecer" com duração de 1 segundo */
 	}
+
+	
+	@keyframes slideUp {
+		from {
+		transform: translateY(100%); /* Inicia os cards posicionados abaixo do contêiner */
+		}
+		to {
+		opacity: 1;
+		transform: translateY(0); /* Termina os cards posicionados no lugar original */
+		}
+	}
+
 
 	.linha1{
 		width: 20%;

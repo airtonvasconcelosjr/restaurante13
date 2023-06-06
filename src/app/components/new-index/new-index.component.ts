@@ -15,11 +15,10 @@ export class NewIndexComponent {
     const opcoes = [
       "O Restaurante não funciona aos Domingos, volte novamente amanhã",
       "Temos como opções, filé de frango, bife acebolado, parmegiana, picanha com fritas e filé de tilápia.",
-      "./assets/imagens/terca.png",
-      "./assets/imagens/quarta.png",
-      "./assets/imagens/quinta.png",
-      "./assets/imagens/sexta.png",
-      "./assets/imagens/sabado.png",
+      "Temos como opções, filé de frango, bife acebolado, parmegiana, picanha com fritas e filé de tilápia.",
+      "Temos como opções, filé de frango, bife acebolado, parmegiana, picanha com fritas e filé de tilápia.",
+      "Temos como opções, filé de frango, bife acebolado, parmegiana, picanha com fritas e filé de tilápia.",
+      "Temos como opções, filé de frango, bife acebolado, parmegiana, picanha com fritas e filé de tilápia.",
     ];
     this.cardapio = opcoes[diaSemana];
     const mensagens = [

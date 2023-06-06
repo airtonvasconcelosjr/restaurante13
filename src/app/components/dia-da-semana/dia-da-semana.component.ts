@@ -15,7 +15,7 @@ export class DiaDaSemanaComponent implements OnInit {
     const imagens = [
       "./assets/imagens/domingo.png",
       "./assets/imagens/segunda.png",
-      "./assets/imagens/terca.png",
+      "./assets/imagens/terça.png",
       "./assets/imagens/quarta.png",
       "./assets/imagens/quinta.png",
       "./assets/imagens/sexta.png",
