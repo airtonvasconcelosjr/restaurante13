@@ -94,11 +94,6 @@ button:hover {
   animation-delay: 2.5s;
 }
 
-.card:hover {
-  transform: scale(1.1); /* modificado para escala menor no hover */
-  z-index: 2;
-  border: 1px solid white;
-}
 
 .card img {
   width: 100%;
@@ -110,6 +105,12 @@ button:hover {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* modificado para adicionar uma sombra mais suave */
 }
+
+.card img:hover{
+  transform: scale(1.2); /* modificado para escala menor no hover */
+  z-index: 999;
+  border: 1px solid white;
+} 
 
 @keyframes slideUp {
   from {
