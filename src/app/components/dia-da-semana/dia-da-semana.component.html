@@ -14,27 +14,27 @@
       <h3>checar de acordo com disponibilidade de estoque</h3>
       <p class="sides">Todos os pratos acompanham porções de arroz, feijão, salada, vinagrete e farofa</p>
     </div>
-    <div *ngIf ="mensagem  === 'Segunda-Feira' || 'Quarta-feira'" class="card-container">
+    <div class="card-container">
       <div class="card">
-        <img src="./assets/imagens/bife.png" alt="">
+        <img src="./assets/imagens/bife.png" alt="" (click)="reproduzirSom(0)">
       </div>
       <div class="card">
-        <img src="./assets/imagens/frango.png" alt="">
+        <img src="./assets/imagens/frango.png" alt="" (click)="reproduzirSom(1)">
       </div>
       <div class="card">
-        <img src="./assets/imagens/tilapia.png" alt="">
+        <img src="./assets/imagens/tilapia.png" alt="" (click)="reproduzirSom(2)">
       </div>
       <div class="card">
-        <img src="./assets/imagens/parme.png" alt="">
+        <img src="./assets/imagens/parme.png" alt="" (click)="reproduzirSom(3)">
       </div>
       <div class="card">
-        <img src="./assets/imagens/feijoada.png" alt="">
+        <img src="./assets/imagens/feijoada.png" alt="" (click)="reproduzirSom(4)">
       </div>
       <div class="card">
-        <img src="./assets/imagens/rabada.png" alt="">
+        <img src="./assets/imagens/rabada.png" alt="" (click)="reproduzirSom(5)">
       </div>
       <div class="card">
-        <img src="./assets/imagens/picanha.png" alt="">
+        <img src="./assets/imagens/picanha.png" alt="" (click)="reproduzirSom(6)">
       </div>
     </div>
   </div>
