@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./cabecalho.component.css']
 })
 export class CabecalhoComponent {
+  showMenu = false;
 
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
 }

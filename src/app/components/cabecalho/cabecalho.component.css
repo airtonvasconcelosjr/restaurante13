@@ -26,7 +26,7 @@
   header {
       text-align: right;
       margin-top: 10px;
-      white-space: nowrap; /* Impede que o conteúdo do header seja quebrado em várias linhas */
+      white-space: nowrap;
   }
   
   header a{
@@ -40,6 +40,54 @@
     font-size: 20px;
   }
 
+  .icon-transition {
+    transition: transform 0.5s ease-in;
+  }
+  
+  .fa-bars {
+    transform: rotate(0deg);
+  }
+  
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .baricon{
+    margin-right: 15px;
+  }
+
+  .menu-card {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color:#e6e6e6;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px 60px;
+    z-index: 999;
+    border: 1px solid black;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .menu-item:hover {
+    text-decoration: underline 2px #4686a0;
+    transform: scale(1.1);
+    font-weight: 500;
+  }
+  
+  .menu-item a {
+    color: black;
+    text-decoration: none;
+  }
+
   
   @media (max-width: 1000px) {
     header a{
@@ -51,9 +99,31 @@
       margin-right: 5px;
     }
   }
-  
-  @media (max-width: 768px) {
+
+
+  @media (max-width: 767px) {
+    header .header-items {
+      display: none; 
+    }
     .caricatura{
-      width: 40%;
+      width: 18%;
+    }
+    
+    header .bar-icon {
+      display: block; 
+      font-size: 20px; 
     }
   }
+
+  @media (min-width: 768px) {
+    header .header-items {
+      display: flex;
+    }
+    
+    header .bar-icon {
+      display: none;
+    }
+  }
+
+
+
