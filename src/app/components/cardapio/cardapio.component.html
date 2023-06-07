@@ -1,24 +1,11 @@
 <main>
   <body>
     <div class="container">
-      <div class="card">
-        <img src="assets/imagens/segunda.png"  alt="Image 1">
+      <ng-container *ngFor="let card of cards; let i = index">
+        <div class="card" [style.animation-delay]="(i + 1) * 0.5 + 's'">
+          <img [src]="card.image" [alt]="card.alt">
+        </div>
+      </ng-container>
     </div>
-    <div class="card">
-      <img src="assets/imagens/terça.png"  alt="Image 2">
-    </div>
-    <div class="card">
-      <img src="assets/imagens/quarta.png"  alt="Image 3">
-    </div>
-    <div class="card">
-      <img src="assets/imagens/quinta.png"  alt="Image 4">
-    </div>
-    <div class="card">
-      <img src="assets/imagens/sexta.png" alt="Image 5">
-    </div>
-    <div class="card">
-      <img src="assets/imagens/sabado.png"  alt="Image 6">
-    </div>
-  </div>
 </body>
 </main>

@@ -39,18 +39,17 @@ em, i {
 }
 
 p {
-	margin: 0 0 2em 0;
 	text-align: justify;
 	line-height: 1.5rem;
-	animation: slideUp 3s ease forwards; /* Aplica a animação "aparecer" com duração de 1 segundo */
+	animation: slideUp 3s ease forwards;
 }
 
 @keyframes fadeIn {
 	from {
-	  opacity: 0; /* Começa com opacidade zero */
+	  opacity: 0; 
 	}
 	to {
-	  opacity: 1; /* Termina com opacidade total */
+	  opacity: 1; 
 	}
   }
 
@@ -177,7 +176,7 @@ hr {
 /* Main */
 
 	.main {
-		padding: 1em 0 1em 0 ;
+		padding: 0.5em 0;
 	}
 
 		.main.style1 {
