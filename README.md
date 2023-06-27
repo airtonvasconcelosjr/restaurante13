@@ -1,6 +1,9 @@
 # Restaurante13
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+Aplicação feita sem fins lucrativos com função que mostra o cardápio do dia de acordo com a data do aparelho que o acessa;
+Utilizando Angular, seguindo conceito de mobile-first e com deploy realizado o vercel no site: https://restaurante-13.vercel.app/Home
+![image](https://github.com/airtonvasconcelosjr/restaurante13/assets/101413097/fa6548fa-17dd-402f-9e44-88a8c78b1147)
+
 
 ## Development server
 
